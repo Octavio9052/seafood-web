@@ -1,10 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Tracking</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Kanter | IS3 | 2017">
+    <meta name="author" content="Octavio Armenta <armenta_octavio@hotmail.com>"/>
+
+    <title>River Salmon | Tracking</title>
+    <link rel="icon" href="../assets/favicon.ico">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- Custom styles for this template -->
+    <link href="../../css/heroic-features.css" rel="stylesheet">
+
+    <!-- Temporary navbar container fix -->
+    <style>
+        .navbar-toggler {
+            z-index: 1;
+        }
+
+        @media (max-width: 576px) {
+            nav > .container {
+                width: 100%;
+            }
+        }
+
+        #footer {
+            position: fixed;
+            height: 100px;
+            bottom: 0;
+            width: 100%;
+        }
+
+        #track_search {
+            margin: auto;
+            padding: 1em;
+        }
+
+        #progress_bar_status {
+            margin: auto;
+        }
+    </style>
+
 </head>
 <body>
+<!-- Navigation -->
+<nav class="navbar fixed-top navbar-toggleable-md navbar-inverse bg-inverse">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+            data-target="#navbarExample" aria-controls="navbarExample" aria-expanded="false"
+            aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="container">
+        <a class="navbar-brand" href="#">River Salmon</a>
+        <div class="collapse navbar-collapse" id="navbarExample">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about_us.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="menu.html">Menu</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Tracking<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="shopping_cart.html"><i class="material-icons">shopping_cart</i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="admin_login.html"><i class="material-icons">person_pin</i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
+<!-- Page Content -->
+<div class="container">
+    <div class="col-lg-6">
+        <div id="track_search" class="input-group">
+            <input type="text" class="form-control" placeholder="Search for...">
+            <span class="input-group-btn">
+        <button class="btn btn-default" type="button">Go!</button>
+      </span>
+        </div><!-- /input-group -->
+    </div><!-- /.col-lg-6 -->
+
+    <div id="progress_bar_status" class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0"
+             aria-valuemax="100" style="width: 10%;">
+            Status
+        </div>
+    </div>
+</div>
+<!-- Footer -->
+<footer id="footer" class="py-5 bg-inverse">
+    <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; River Salmon 2017</p>
+    </div>
+    <!-- /.container -->
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+<script src="../jquery/jquery.min.js"></script>
+<script src="../tether/tether.min.js"></script>
+<script src="../bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
