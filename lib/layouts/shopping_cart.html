@@ -61,6 +61,10 @@
         .pad-def {
             padding: 1em;
         }
+
+        .table-of {
+            overflow: auto;
+        }
     </style>
 
 </head>
@@ -102,13 +106,13 @@
 
 <!-- Page Content -->
 <div class="container bootstrap snippet">
-    <div class="col-md-9 col-sm-8 content">
+    <div class="content">
         <div class="row">
             <div class="col-md-12 pad-def">
-                <div class="panel panel-info panel-shadow">
+                <div class="panel panel-info">
                     <div class="panel-body">
-                        <div class="table-responsive">
-                            <table class="table">
+                        <div class="table">
+                            <table class="table table-of">
                                 <thead>
                                 <tr>
                                     <th>Product</th>
@@ -119,6 +123,7 @@
                                 </tr>
                                 </thead>
                                 <tbody>
+
                                 <tr>
                                     <td><img src="http://lorempixel.com/400/200/fashion/2/" class="img-cart"></td>
                                     <td><strong>Product 1</strong>
@@ -134,6 +139,23 @@
                                     <td>$54.00</td>
                                     <td>$54.00</td>
                                 </tr>
+
+                                <tr>
+                                    <td><img src="http://lorempixel.com/400/200/fashion/2/" class="img-cart"></td>
+                                    <td><strong>Product 1</strong>
+                                        <p>Size : 26</p></td>
+                                    <td>
+                                        <form class="form-inline">
+                                            <input class="form-control" type="text" value="1">
+                                            <button rel="tooltip" class="btn btn-default"><i class="fa fa-pencil"></i>
+                                            </button>
+                                            <a href="#" class="btn btn-primary"><i class="fa fa-trash-o"></i></a>
+                                        </form>
+                                    </td>
+                                    <td>$54.00</td>
+                                    <td>$54.00</td>
+                                </tr>
+
                                 <tr>
                                     <td><img src="http://lorempixel.com/400/200/fashion/1/" class="img-cart"></td>
                                     <td><strong>Product 2</strong>
@@ -157,12 +179,8 @@
                                     <td>$86.00</td>
                                 </tr>
                                 <tr>
-                                    <td colspan="4" class="text-right">Total Shipping</td>
-                                    <td>$2.00</td>
-                                </tr>
-                                <tr>
                                     <td colspan="4" class="text-right"><strong>Total</strong></td>
-                                    <td>$88.00</td>
+                                    <td>$86.00</td>
                                 </tr>
                                 </tbody>
                             </table>
@@ -177,14 +195,6 @@
         </div>
     </div>
 </div>
-
-<!-- Footer -->
-<footer id="footer" class="py-5 bg-inverse">
-    <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; River Salmon 2017</p>
-    </div>
-    <!-- /.container -->
-</footer>
 
 <!-- Bootstrap core JavaScript -->
 <script src="../jquery/jquery.min.js"></script>
